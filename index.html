@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Beijo</title>
+ <style>
+    body{
+background-color: #6A5ACD;
+font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 50px;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+}
+.sim{
+    width: 100px;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+}
+.nao    {
+    width: 100px;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+    }
+ </style>
+    
+</head>
+<body>
+    <div>
+        <h1>Você quer me beijar?</h1>
+        <p>vai ser bom, eu juro!!!</p>
+        <button class="sim" id="yes" onclick="window.location.href='https://youtu.be/izGwDsrQ1eQ'">
+            Sim
+        </button>
+        <br>
+        <button class="nao" id="no">
+            Não
+        </button>
+    </div>
+    <script>
+        document.querySelector('#no').addEventListener
+        ("click", function(){
+            let h = window.innerHeight - 50;
+            let w = window.innerWidth - 50;
+            this.style.position = "absolute"
+            this.style.top = Math.random() * h + "px"
+            this.style.left = Math.random() * w + "px"
+        }
+        )
+    </script>
+</body>
+</html>
